@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TH2</title>
+</head>
+<body>
+<h1 >Sửa Sinh Viên!</h1>
+
+<form method="POST" th:object="${product}">
+
+
+    <h3>Code: </h3>
+    <input type="text" th:field="*{code}" readonly /> <br/>
+    <h3>Description: </h3>
+    <input type="text" th:field="*{des}"/> <br/>
+    <h3>Price: </h3>
+    <input type="text" th:field="*{price}"/><br/>
+
+    <br/>
+    <button type="submit">Sửa</button>
+
+</form>
+</body>
+</html>
